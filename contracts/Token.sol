@@ -11,8 +11,8 @@ import "hardhat/console.sol";
 // This is the main building block for smart contracts.
 contract Token {
     // Some string type variables to identify the token.
-    string public name = "My Hardhat Token";
-    string public symbol = "MHT";
+    string public name = "My Token";
+    string public symbol = "DGT";
 
     // The fixed amount of tokens stored in an unsigned integer type variable.
     uint256 public totalSupply = 1000000;
@@ -75,4 +75,6 @@ contract Token {
     function balanceOf(address account) external view returns (uint256) {
         return balances[account];
     }
+
+    // เขียนฟังก์ชันสำหรับแสดงข้อมูล totalSupply ด้านล่างและเรียกใช้งานเพื่อแสดงให้หน้าแรกของ UI
 }
