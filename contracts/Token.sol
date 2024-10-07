@@ -76,5 +76,7 @@ contract Token {
         return balances[account];
     }
 
-    // เขียนฟังก์ชันสำหรับแสดงข้อมูล totalSupply ด้านล่างและเรียกใช้งานเพื่อแสดงให้หน้าแรกของ UI
+     function getTotalSupply() external view returns (uint256) {
+        return totalSupply;
+    }
 }
